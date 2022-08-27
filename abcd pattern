@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char str[10];
+	int i,j,k,l,n;
+	printf("enter the string");
+	gets(str);
+	n=strlen(str);
+	for(i=1;i<=n;i++)
+	{
+		for(j=0;j<=n-1;j++)
+		{
+			l=j+i;
+			for(k=j;k<l;k++)
+			{
+				printf("%c ",str[k]);
+			}
+			printf("\n");
+		}
+	}
+}
